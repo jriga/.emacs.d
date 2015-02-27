@@ -5,3 +5,5 @@ elpa/*
 vendor/*
 cider-history
 places
+ido.last
+recentf

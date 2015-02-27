@@ -34,3 +34,8 @@
 (setq smex-save-file (concat user-emacs-directory ".smex-items"))
 (smex-initialize)
 (global-set-key (kbd "M-x") 'smex)
+
+
+
+;; activate find file in repository
+(global-set-key (kbd "C-x f") 'find-file-in-repository)

@@ -9,3 +9,5 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+(load-theme 'tango-dark)

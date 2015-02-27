@@ -60,6 +60,9 @@
     ;; edit html tags like sexps
     tagedit
 
+    ;; fuzzy repo file finder
+    find-file-in-repository
+
     ;; git integration
     magit))
 
@@ -116,3 +119,4 @@
 
 ;; Editing functions tabs, current line, etc...
 (load "editing")
+

@@ -1,3 +1,6 @@
+;; No toolbar please
+(tool-bar-mode 0)
+
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
 
