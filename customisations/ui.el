@@ -10,4 +10,6 @@
 ;; no bell
 (setq ring-bell-function 'ignore)
 
-(load-theme 'tango-dark)
+;;(load-theme 'tango-dark)
+;;(load-theme 'manoj-dark)
+(load-theme 'bliss t)
