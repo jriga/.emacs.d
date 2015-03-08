@@ -5,3 +5,4 @@ elpa/*
 vendor/*
 cider-history
 places
+bookmarks
