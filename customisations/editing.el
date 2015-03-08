@@ -1,3 +1,6 @@
+;; No toolbar please
+(tool-bar-mode 0)
+
 ;; Highlights matching parenthesis
 (show-paren-mode 1)
 
@@ -44,8 +47,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; shell scripts
-(setq-default sh-basic-offset 2)
-(setq-default sh-indentation 2)
+(setq-default sh-basic-offset 1)
+(setq-default sh-indentation 1)
 
 ;; No need for ~ files when editing
 (setq create-lockfiles nil)

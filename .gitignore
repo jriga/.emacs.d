@@ -6,3 +6,5 @@ vendor/*
 cider-history
 places
 bookmarks
+ido.last
+recentf
