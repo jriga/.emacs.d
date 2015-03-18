@@ -65,6 +65,9 @@
 
     ;; git integration
     magit
+
+    ;; editorconfig
+    editorconfig
     
     ;; bliss-theme
     bliss-theme))
@@ -130,8 +133,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default)))
- '(send-mail-function nil))
+    ("569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

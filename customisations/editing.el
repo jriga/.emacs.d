@@ -56,6 +56,6 @@
 ;; Go straight to scratch buffer on startup
 (setq inhibit-startup-message t)
 
+;; Activate editor config 
+(load "editorconfig")
 
-;; Set global key for find-file-in-repository
-(global-set-key (kbd "C-x f") 'find-file-in-repository)
