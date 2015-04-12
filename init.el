@@ -68,7 +68,10 @@
 
     ;; editorconfig
     editorconfig
-    
+
+    ;; js lint
+    flymake-jshint
+
     ;; bliss-theme
     bliss-theme))
 
@@ -92,7 +95,7 @@
 
 ;; Rsense
 ;; (require 'rsense)
-;; 
+;;
 ;; ;; Rsense + Autocomplete
 ;; (add-hook 'ruby-mode-hook
 ;;           (lambda ()
