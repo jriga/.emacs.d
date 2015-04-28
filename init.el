@@ -72,6 +72,9 @@
     ;; js lint
     flymake-jshint
 
+    ;; org task management
+    org
+    
     ;; bliss-theme
     bliss-theme))
 
