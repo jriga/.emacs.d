@@ -44,12 +44,5 @@
 ;; keybindings for grep-find
 (global-set-key (kbd "C-f") 'grep-find)
 
-
-(defun nav-window ()
-    (interactive)
-    (let ((n (string-to-number (read-from-minibuffer "Window number: "))))
-      (other-window n)))
-
-(global-set-key (kbd "C-x w") 'nav-window)
-
-(global-set-key (kbd "s-1") 'other-window)
+;; keybindings for ace-window
+(global-set-key (kbd "æ") 'ace-window)

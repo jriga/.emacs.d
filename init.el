@@ -74,6 +74,9 @@
 
     ;; org task management
     org
+
+    ;; better window navigation
+    ace-window
     
     ;; bliss-theme
     bliss-theme))
