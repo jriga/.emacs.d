@@ -45,4 +45,4 @@
 (global-set-key (kbd "C-f") 'grep-find)
 
 ;; keybindings for ace-window
-(global-set-key (kbd "æ") 'ace-window)
+(global-set-key (kbd "C-r") 'ace-window)
