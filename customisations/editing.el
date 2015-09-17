@@ -58,11 +58,3 @@
 
 ;; Activate editor config 
 (load "editorconfig")
-
-;; JSHint
-;; before run cmd `$npm install -g jshint`
-(require 'flymake-jshint)
-(add-hook 'js-mode-hook 'flymake-jslint-load)
-
-;; JS intdent 2 spaces for TAB
-(setq js-indent-level 2)

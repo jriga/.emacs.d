@@ -77,7 +77,7 @@
 
     ;; better window navigation
     ace-window
-    
+
     ;; bliss-theme
     bliss-theme))
 
@@ -131,6 +131,9 @@
 ;; Customizations for clojure
 (load "my-clojure")
 
+
+;; specific customization for javascript
+(load "my-js")
 
 ;; Editing functions tabs, current line, etc...
 (load "editing")
