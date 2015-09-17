@@ -16,7 +16,7 @@
 ;; before run cmd `$npm install -g jshint`
 (require 'flymake-jshint)
 (add-hook 'js-mode-hook 'flymake-jslint-load)
-(add-hook 'js-mode-hook 'my-paredit-nonlisp)
+(add-hook 'js-mode-hook 'electric-pair-mode)
 
 ;; JS intdent 2 spaces for TAB
 (setq js-indent-level 2)
