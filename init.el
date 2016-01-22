@@ -70,7 +70,7 @@
     editorconfig
 
     ;; js lint
-    flymake-jshint
+    flymake-jslint
 
     ;; org task management
     org
@@ -78,6 +78,12 @@
     ;; better window navigation
     ace-window
 
+    ;; better mode bar
+    powerline
+
+    ;; smart-mode-line
+    smart-mode-line
+    
     ;; bliss-theme
     bliss-theme))
 
@@ -95,7 +101,6 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
-
 
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
@@ -145,7 +150,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default))))
+    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
