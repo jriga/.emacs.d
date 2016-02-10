@@ -72,6 +72,9 @@
     ;; js lint
     flymake-jslint
 
+    ;; web-mode better html-mode
+    web-mode
+
     ;; org task management
     org
 
@@ -85,7 +88,11 @@
     smart-mode-line
     
     ;; bliss-theme
-    bliss-theme))
+    bliss-theme
+
+    ;; smart-mode-line
+    smart-mode-line
+    smart-mode-line-powerline-theme))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -101,6 +108,9 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;; avoid theme confirmation at start up
+(setq sml/no-confirm-load-theme t)
 
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
@@ -143,6 +153,8 @@
 ;; Editing functions tabs, current line, etc...
 (load "editing")
 
+;; Tmux workaround
+(load "tmux")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -150,7 +162,11 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
+<<<<<<< HEAD
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default))))
+=======
+    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default))))
+>>>>>>> d8504eb80ce9076ca0d456e2e3180e782e8202ac
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

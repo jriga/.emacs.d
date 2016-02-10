@@ -9,10 +9,19 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+;; smart-power-line
+;; These two lines are just examples
+(setq powerline-arrow-shape 'curve)
+(setq powerline-default-separator-dir '(right . left))
+;; These two lines you really need.
+(setq sml/theme 'dark)
+(sml/setup)
+
 
 ;;(load-theme 'tango-dark)
 ;;(load-theme 'manoj-dark)
 (load-theme 'bliss t)
+
 
 ;; shrink-window 
 (global-set-key (kbd "C-x <up>") 'shrink-window)
@@ -24,4 +33,3 @@
 ;; (setq powerline-arrow-shape 'arrow)   ;; the default
 (setq powerline-arrow-shape 'curve)   ;; give your mode-line curves
 ;;(setq powerline-arrow-shape 'arrow14) ;; best for small fonts
-

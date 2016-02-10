@@ -16,9 +16,9 @@
 (add-hook 'js-mode-hook 'electric-pair-mode)
 
 ;; JSHint
-;; before run cmd `$npm install -g jshint jslint`
-(require 'flymake-jslint)
-(add-hook 'js-mode-hook 'flymake-jslint-load)
+;; before run cmd `$npm install -g jshint`
+(require 'flymake-jshint)
+(add-hook 'js-mode-hook 'flymake-jshint-load)
 
 
 ;; JS intdent 2 spaces for TAB
