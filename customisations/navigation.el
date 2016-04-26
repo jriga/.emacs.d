@@ -46,3 +46,9 @@
 
 ;; keybindings for ace-window
 (global-set-key (kbd "C-r") 'ace-window)
+
+;; ctags for ruby project
+;; $cd ruby-project
+;; $ctags -e -R --languages=ruby --exclude=.git --exclude=log .
+;; set pop-tag-mark to M-,
+(add-hook 'ruby-mode-hook (lambda () (local-set-key (kbd "M-,") 'pop-tag-mark)))

@@ -162,11 +162,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-<<<<<<< HEAD
-    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "569dc84822fc0ac6025f50df56eeee0843bffdeceff2c1f1d3b87d4f7d9fa661" default))))
-=======
     ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default))))
->>>>>>> d8504eb80ce9076ca0d456e2e3180e782e8202ac
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
