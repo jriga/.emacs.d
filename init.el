@@ -70,7 +70,7 @@
     editorconfig
 
     ;; js lint
-    flymake-jshint
+    flymake-jslint
 
     ;; web-mode better html-mode
     web-mode
@@ -81,6 +81,12 @@
     ;; better window navigation
     ace-window
 
+    ;; better mode bar
+    powerline
+
+    ;; smart-mode-line
+    smart-mode-line
+    
     ;; bliss-theme
     bliss-theme
 
