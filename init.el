@@ -147,6 +147,9 @@
 ;; Editing functions tabs, current line, etc...
 (load "editing")
 
+;; Window related stuff
+(load "window")
+
 ;; Tmux workaround
 (load "tmux")
 (custom-set-variables
