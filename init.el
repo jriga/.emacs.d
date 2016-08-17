@@ -70,7 +70,7 @@
     editorconfig
 
     ;; js lint
-    flymake-jslint
+    flymake-jshint
 
     ;; web-mode better html-mode
     web-mode
