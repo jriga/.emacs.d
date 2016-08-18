@@ -30,6 +30,13 @@
 (global-set-key (kbd "C-x <down>") 'enlarge-window)
 
 
+
 ;; (setq powerline-arrow-shape 'arrow)   ;; the default
 (setq powerline-arrow-shape 'curve)   ;; give your mode-line curves
 ;;(setq powerline-arrow-shape 'arrow14) ;; best for small fonts
+
+; when in graphical mode
+(when (display-graphic-p)
+  (scroll-bar-mode -1)
+  (powerline-default-theme)
+  (smart-mode-line-enable))
