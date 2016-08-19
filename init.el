@@ -69,7 +69,7 @@
     ;; editorconfig
     editorconfig
 
-    ;; js lint
+    ;; js hint, depends on npm install jshint -g
     flymake-jshint
 
     ;; web-mode better html-mode
@@ -86,13 +86,16 @@
 
     ;; smart-mode-line
     smart-mode-line
-    
+
     ;; bliss-theme
     bliss-theme
 
     ;; smart-mode-line
     smart-mode-line
-    smart-mode-line-powerline-theme))
+    smart-mode-line-powerline-theme
+
+    ;; ruby stuff
+    rspec-mode))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
