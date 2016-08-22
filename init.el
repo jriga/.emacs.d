@@ -95,6 +95,7 @@
     smart-mode-line-powerline-theme
 
     ;; ruby stuff
+    yaml-mode
     rspec-mode))
 
 ;; On OS X, an Emacs instance started from the graphical user
