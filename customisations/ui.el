@@ -40,3 +40,5 @@
   (scroll-bar-mode -1)
   (powerline-default-theme)
   (smart-mode-line-enable))
+
+(display-time-mode 1)
