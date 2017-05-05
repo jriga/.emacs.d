@@ -58,3 +58,12 @@
 
 ;; Activate editor config 
 (load "editorconfig")
+
+
+;; paredit-mode for ruby rspec js
+(dolist (mode '(ruby rspec js))
+  (add-hook (intern (format "%s-mode-hook" mode))
+            '(lambda ()
+               (add-to-list (make-local-variable 'paredit-space-for-delimiter-predicates)
+                            (lambda (_ _) nil))
+               (enable-paredit-mode))))
