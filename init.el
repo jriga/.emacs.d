@@ -95,9 +95,14 @@
     smart-mode-line-powerline-theme
 
     ;; ruby stuff
+    rbenv
+    markdown-mode+
     yaml-mode
     rspec-mode
-    inf-ruby))
+    inf-ruby
+
+    ;; emacs interaction
+    disable-mouse))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -181,3 +186,11 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
+
+
+;; activate rbenv globally
+(global-rbenv-mode)
+
+
+;; disable mouse in emacs
+(global-disable-mouse-mode)
