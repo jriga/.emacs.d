@@ -4,12 +4,17 @@
 (require 'package)
 
 ;; Marmalade
-(add-to-list 'package-archives
-             '("marmalade" . "https://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("marmalade" . "https://marmalade-repo.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("tromey" . "http://tromey.com/elpa/") t)
+;;(add-to-list 'package-archives
+;;             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ;; Load and activate emacs packages. Do this first so that the
 ;; packages are loaded before you start trying to modify them.
@@ -44,7 +49,8 @@
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/better-defaults.el line 47 for a description
     ;; of ido
-    ido-ubiquitous
+    ido-completing-read+
+    ;; ido-ubiquitous old
 
     ;; Enhances M-x to allow easier execution of commands. Provides
     ;; a filterable list of possible commands in the minibuffer
@@ -194,3 +200,7 @@
 
 ;; disable mouse in emacs
 (global-disable-mouse-mode)
+
+
+;; activate ido everywhere
+(ido-ubiquitous-mode 1)
