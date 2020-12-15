@@ -45,7 +45,7 @@
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
-
+    
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/better-defaults.el line 47 for a description
     ;; of ido
@@ -108,7 +108,12 @@
     inf-ruby
 
     ;; emacs interaction
-    disable-mouse))
+    disable-mouse
+
+
+    ;; python IDE
+    elpy
+    flycheck))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -166,6 +171,11 @@
 ;; specific customization for javascript
 (load "my-js")
 
+
+;; specific customization for javascript
+(load "my-python")
+
+
 ;; Editing functions tabs, current line, etc...
 (load "editing")
 
@@ -180,11 +190,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default)))
+   '("3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" default))
  '(package-selected-packages
-   (quote
-    (rubocop ruby-electric 4clojure yaml-mode web-mode tagedit smex smart-mode-line-powerline-theme rspec-mode rainbow-delimiters puppet-mode projectile paredit markdown-mode+ magit log4j-mode inf-ruby ido-ubiquitous haml-mode gherkin-mode flymake-jshint floobits find-file-in-repository feature-mode exec-path-from-shell editorconfig clojure-mode-extra-font-locking cider bliss-theme ace-window))))
+   '(typescript-mode vue-mode flymake-python-pyflakes py-autopep8 whitespace-cleanup-mode rubocop ruby-electric 4clojure yaml-mode web-mode tagedit smex smart-mode-line-powerline-theme rspec-mode rainbow-delimiters puppet-mode projectile paredit markdown-mode+ magit log4j-mode inf-ruby ido-ubiquitous haml-mode gherkin-mode flymake-jshint floobits find-file-in-repository feature-mode exec-path-from-shell editorconfig clojure-mode-extra-font-locking cider bliss-theme ace-window)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
